@@ -1,9 +1,13 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 gem 'sqlite3'
 gem 'lograge'
+gem 'pry-rails'
+gem "rails_config"
+
 
 #Front End Tools
 gem 'sass-rails', '~> 5.0'
@@ -18,11 +22,9 @@ gem 'font-awesome-sass', '~> 4.6.2'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem "rails_config"
 
 group :development, :test do
   gem 'byebug'
-  gem 'pry-rails'
   gem 'pry-byebug'
   gem 'binding_of_caller'
   gem 'better_errors'
