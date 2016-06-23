@@ -1,9 +1,12 @@
 @import 'bootstrap';
+@import 'bootstrap-sprockets';
 @import 'font-awesome';
 @import 'font-awesome-sprockets';
 
 //Fonts
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
 
 
 .oswald_font_light {
@@ -20,5 +23,21 @@
 
 .oswald_font_bold {
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.satisfy {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  color: #FFF323;
+}
+
+.tangerine {
+  font-family: 'Tangerine', cursive;
+  font-weight: 400;
+}
+
+.tangerine_bold {
+  font-family: 'Tangerine', cursive;
   font-weight: 700;
 }
