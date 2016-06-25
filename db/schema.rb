@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160623021550) do
+ActiveRecord::Schema.define(version: 20160625191004) do
+
+  create_table "passports", force: :cascade do |t|
+    t.string   "last_name"
+    t.string   "given_name"
+    t.string   "country_of_issue"
+    t.string   "passport_number"
+    t.date     "date_of_birth"
+    t.date     "date_of_issue"
+    t.date     "date_of_expiration"
+    t.string   "authority"
+    t.string   "type"
+    t.string   "place_of_birth"
+    t.string   "number_of_visa_pages"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.string   "last_name"
@@ -23,6 +39,14 @@ ActiveRecord::Schema.define(version: 20160623021550) do
     t.string   "religion"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string   "trip_name"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

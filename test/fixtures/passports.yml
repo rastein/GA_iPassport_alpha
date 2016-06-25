@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_name: MyString
+  given_name: MyString
+  passport_number: MyString
+  date_of_issue: 2016-06-25
+  date_of_expiration: 2016-06-25
+  authority: MyString
+  type: 
+  place_of_birth: MyString
+  number_of_visa_pages: MyString
+
+two:
+  last_name: MyString
+  given_name: MyString
+  passport_number: MyString
+  date_of_issue: 2016-06-25
+  date_of_expiration: 2016-06-25
+  authority: MyString
+  type: 
+  place_of_birth: MyString
+  number_of_visa_pages: MyString

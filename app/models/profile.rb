@@ -4,4 +4,6 @@ class Profile < ActiveRecord::Base
 
   # scope :marital_status, -> {where(marital_status: "single")}
   # scope :marital_status, -> (marital_status) { where( "marital_status < ?", marital_status)}
+
+  has_many :passports,
 end

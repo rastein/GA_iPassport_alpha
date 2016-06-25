@@ -1,0 +1,29 @@
+<h1 class='tangerine'>New Trip</h1>
+
+<%= form_for :trip do |f| %>
+  <p>
+    <%= f.label :trip_name %><br>
+    <%= f.text_field :trip_name %>
+  </p>
+
+  <p>
+    <%= f.label :start_date %><br>
+    <%= f.text_field :start_date %>
+  </p>
+
+  <p>
+    <%= f.label :end_date %><br>
+    <%= f.text_field :end_date %>
+  </p>
+
+  <p>
+    <%= f.submit class: 'btn btn-success'%>
+  </p>
+<% end %>
+
+
+
+
+
+
+<p>Find me in app/views/trips/new.html.erb</p>

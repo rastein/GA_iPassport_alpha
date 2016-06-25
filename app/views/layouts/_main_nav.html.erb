@@ -1,20 +1,25 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-      <div class="navbar-header">
-        <button type "button" class='navbar-toggle collapsed' data-toggle='collapse'
+<nav class="navbar navbar-default",>
+  <div class="container-fluid",>
+      <div class="navbar-header",>
+        <button type "button" class='navbar-toggle collapsed','satisfy', data-toggle='collapse'
         data-target="#bs-example-navbar-1">
         <span class="sr-only"> Toggle Navigation </span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "My Profile", root_path, class: "navbar-brand Amatic" %>
+      <%= link_to "iPassport", root_path, class: "navbar-brand Amatic" %>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li> <%=link_to "My Profile", profile_index_path, class:"active" %></li>
         <li> <%=link_to "Test", test_path, class:"active" %></li>
-        <li> <%=link_to "About", '#' %></li>
+        <li> <%=link_to "New Profile", profile_new_path, class:"active" %></li>
+        <li> <%=link_to "Update Profile", profile_edit_path, class:"active" %></li>
+        <li> <%=link_to "My Trips", trips_new_path, class:"active" %></li>
+        <li> <%=link_to "New Trip!", trips_new_path, class:"active" %></li>
+
       </ul>
       <ul class='nav navbar-nav navbar-right'>
         <li> <%= link_to "Sign In", "#" %> </li>

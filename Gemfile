@@ -5,6 +5,9 @@ gem 'rails', '4.2.3'
 gem 'lograge'
 gem 'pry-rails'
 
+gem 'omniauth-twitter'
+gem "figaro"
+
 #Front End Tools
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
