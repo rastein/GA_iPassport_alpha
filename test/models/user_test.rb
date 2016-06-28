@@ -1,18 +1,21 @@
 # == Schema Information
 #
-# Table name: trips
+# Table name: users
 #
 #  id         :integer          not null, primary key
-#  trip_name  :string
-#  start_date :date
-#  end_date   :date
+#  provider   :string
+#  uid        :string
+#  name       :string
+#  location   :string
+#  image_url  :string
+#  url        :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class TripTest < ActiveSupport::TestCase
+class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

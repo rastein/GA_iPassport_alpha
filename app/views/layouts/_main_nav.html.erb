@@ -13,16 +13,22 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li> <%=link_to "My Profile", profile_index_path, class:"active" %></li>
-        <li> <%=link_to "Test", test_path, class:"active" %></li>
-        <li> <%=link_to "New Profile", profile_new_path, class:"active" %></li>
-        <li> <%=link_to "Update Profile", profile_edit_path, class:"active" %></li>
-        <li> <%=link_to "My Trips", trips_new_path, class:"active" %></li>
-        <li> <%=link_to "New Trip!", trips_new_path, class:"active" %></li>
-
+        <% if current_user %>
+        <ul class="nav navbar-nav pull-right">
+          <li> <%=link_to "New Profile", profile_new_path, class:"active" %></li>
+          <li> <%=link_to "My Profile", profile_index_path, class:"active" %></li>
+          <li> <%=link_to "Update Profile", profile_edit_path, class:"active" %></li>
+          <li> <%=link_to "My Trips", trips_new_path, class:"active" %></li>
+          <li> <%=link_to "New Trip!", trips_new_path, class:"active" %></li>
+          <li> <%=image_tag current_user.image_url, alt: current_user.name %> </li>
+          <li> <%=link_to 'Sign Out', signout_path, class: 'btn btn-xs', method: :delete %> </li>
+        </ul>
+        <% else %>
+        <ul class="nav navbar navbar-right">
+          <li> <%= link_to 'Sign in', '/auth/twitter', class: 'btn btn-lg' %> </li>
+        </ul>
+        <% end %>
       </ul>
-      <ul class='nav navbar-nav navbar-right'>
-        <li> <%= link_to "Sign In", "#" %> </li>
       </div>
   </div>
 </nav>
