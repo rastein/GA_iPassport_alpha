@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   rescue
     flash[:warning] = "There was an error"
   end
-  redirect_to root_path
+  redirect_to account_profiles_path
   end
 
   def destroy

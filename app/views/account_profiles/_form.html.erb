@@ -1,0 +1,12 @@
+<div class="panel-body">
+
+<%= simple_form_for @account_profile do  |f| %>
+  <%= f.input :last_name, label: false, input_html: { placeholder: "Last Name"} %>
+  <%= f.input :first_name, label: false, input_html: { placeholder: "First Name"} %>
+  <%= f.input :middle_name, label: false, input_html: { placeholder: "Middle Name" } %>
+  <%= f.input :martial_status, label: false, input_html: { placeholder: "Marital Status" } %>
+
+  <%= f.input :date_of_birth, :as => :date, :start_year => 1776 %>
+  <%= f.submit "Submit".html_safe, class: "btn btn-lg btn-danger" %>
+  <% end %>
+</div>

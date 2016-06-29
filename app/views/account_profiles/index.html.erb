@@ -1,0 +1,11 @@
+<h1>Account Profiles </h1>
+<t1> <%= link_to "Update Profile", "#", class: "btn" %> </t1>
+
+<% @account_profiles.each do |account| %>
+<li> <%= account.first_name %> </li>
+<li> <%= account.middle_name %> </li>
+<li> <%= account.last_name %> </li>
+<li> <%= account.date_of_birth %> </li>
+<li> <%= account.martial_status %> </li>
+
+<%end %>

@@ -15,17 +15,20 @@
       <ul class="nav navbar-nav">
         <% if current_user %>
         <ul class="nav navbar-nav pull-right">
-          <li> <%=link_to "New Profile", profile_new_path, class:"active" %></li>
-          <li> <%=link_to "My Profile", profile_index_path, class:"active" %></li>
-          <li> <%=link_to "Update Profile", profile_edit_path, class:"active" %></li>
-          <li> <%=link_to "My Trips", trips_new_path, class:"active" %></li>
-          <li> <%=link_to "New Trip!", trips_new_path, class:"active" %></li>
+          <li> <%=link_to "My Profile", account_profiles_path %></li>
+          <li> <%=link_to "New Profile", new_account_profile_path %></li>
+          <li> <%=link_to "My Passports", '#' %></li>
+          <li> <%=link_to "Update Profile", '#'%></li>
+          <li> <%=link_to "My Trips", trips_path %></li>
+          <li> <%=link_to "New Trip!", new_trip_path, class:"active" %></li>
           <li> <%=image_tag current_user.image_url, alt: current_user.name %> </li>
           <li> <%=link_to 'Sign Out', signout_path, class: 'btn btn-xs', method: :delete %> </li>
         </ul>
         <% else %>
-        <ul class="nav navbar navbar-right">
+        <ul class="nav navbar-nav pull-right">
           <li> <%= link_to 'Sign in', '/auth/twitter', class: 'btn btn-lg' %> </li>
+          <li> <%=link_to "Test", test_path, class: 'btn btn-lg' %> </li>
+
         </ul>
         <% end %>
       </ul>

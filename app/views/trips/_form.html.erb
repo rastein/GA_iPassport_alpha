@@ -1,0 +1,10 @@
+<div class="panel-body">
+
+<%= simple_form_for @trip do  |t| %>
+  <%= t.input :trip_name, label: false, input_html: { placeholder: "Trip Name"} %>
+  <%= t.input :start_date, :as => :date, :start_year => 1776, label: false, input_html: { placeholder: "Start Date"} %>
+  <%= t.input :end_date, :as => :date, :start_year => 1776, label: false, input_html: { placeholder: "End Date" } %>
+
+  <%= t.submit "Submit".html_safe, class: "btn btn-lg btn-danger" %>
+  <% end %>
+</div>

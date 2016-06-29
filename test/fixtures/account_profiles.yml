@@ -1,13 +1,13 @@
 # == Schema Information
 #
-# Table name: profiles
+# Table name: account_profiles
 #
 #  id             :integer          not null, primary key
 #  last_name      :string
 #  first_name     :string
 #  middle_name    :string
 #  date_of_birth  :date
-#  marital_status :string
+#  martial_status :string
 #  gender         :string
 #  religion       :string
 #  created_at     :datetime         not null
@@ -20,8 +20,8 @@ one:
   last_name: MyString
   first_name: MyString
   middle_name: MyString
-  date_of_birth: 2016-06-22
-  marital_status: MyString
+  date_of_birth: 2016-06-28
+  martial_status: MyString
   gender: MyString
   religion: MyString
 
@@ -29,7 +29,7 @@ two:
   last_name: MyString
   first_name: MyString
   middle_name: MyString
-  date_of_birth: 2016-06-22
-  marital_status: MyString
+  date_of_birth: 2016-06-28
+  martial_status: MyString
   gender: MyString
   religion: MyString

@@ -8,6 +8,9 @@ gem 'pry-rails'
 gem 'omniauth-twitter'
 gem "figaro"
 
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
+
 #Front End Tools
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

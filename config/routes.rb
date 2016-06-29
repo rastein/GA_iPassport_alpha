@@ -1,28 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'profile/new'
-
-  get 'profile/edit'
-
-  get 'profile/delete'
-
-  get 'profile/index'
-
   get 'test', to: 'static_pages#test', as: 'test'
 
-  root 'static_pages#home'
-
-  get 'trips/new'
-
-  get 'trips/edit'
-
-  get 'trips/delete'
-
-  get 'trips/index'
-
   get '/auth/:provider/callback', to: 'sessions#create'
-
   delete '/signout', to: 'sessions#destroy', as: 'signout'
+
+  resources :trips
+  resources :passports
+  resources :account_profiles
+
+  root 'static_pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -50,7 +37,7 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-  resources :trips
+
 
 
   # Example resource route with sub-resources:
